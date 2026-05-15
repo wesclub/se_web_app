@@ -6,5 +6,14 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+def about():
+    return render_template('about.html')
+
+def portfolio():
+    return render_template('portfolio.html')
+
+def contact():
+    return render_template('contact.html')
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
